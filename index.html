@@ -23,40 +23,98 @@
   </script>
 
   <style>
-    body {
-      font-family: Arial, sans-serif;
-      max-width: 800px;
-      margin: auto;
-      padding: 20px;
-      text-align: center;
-      line-height: 1.6;
-    }
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.6;
 
-    img {
-      width: 180px;
-      border-radius: 50%;
-      margin-top: 10px;
-    }
+    /* animation */
+    opacity: 0;
+    transform: translateY(10px);
+    animation: pageFade 700ms ease-out forwards;
+  }
 
-    ul {
-      list-style-type: none;
-      padding: 0;
+  @keyframes pageFade {
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
+  }
 
-    li {
-      margin: 6px 0;
-    }
+  h1 {
+    margin-bottom: 8px;
+    opacity: 0;
+    transform: translateY(-8px);
+    animation: fadeDown 700ms ease-out 120ms forwards;
+  }
 
-    a {
-      text-decoration: none;
-      color: #0066cc;
-      font-weight: bold;
+  @keyframes fadeDown {
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
+  }
 
-    a:hover {
-      text-decoration: underline;
+  img {
+    width: 180px;
+    border-radius: 50%;
+    margin-top: 10px;
+
+    /* animation */
+    opacity: 0;
+    transform: scale(0.96);
+    animation: popIn 700ms cubic-bezier(.2,.8,.2,1) 220ms forwards;
+
+    /* hover */
+    transition: transform 200ms ease, box-shadow 200ms ease;
+  }
+
+  img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  }
+
+  p, h2, ul {
+    opacity: 0;
+    transform: translateY(10px);
+    animation: riseIn 650ms ease-out 320ms forwards;
+  }
+
+  @keyframes riseIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
-  </style>
+  }
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    margin: 6px 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+
+    /* hover animation */
+    transition: transform 160ms ease, opacity 160ms ease, text-decoration-color 160ms ease;
+    display: inline-block;
+  }
+
+  a:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+    text-decoration: underline;
+  }
+</style>
 </head>
 
 <body>
