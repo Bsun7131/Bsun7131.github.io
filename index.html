@@ -154,66 +154,157 @@
 
 .stat {
   text-align: center;
-}
+<style>
+  body {
+    font-family: Arial, sans-serif;
+    max-width: 800px;
+    margin: auto;
+    padding: 20px;
+    text-align: center;
+    line-height: 1.6;
+    opacity: 0;
+    transform: translateY(10px);
+    animation: pageFade 700ms ease-out forwards;
+  }
 
-.stat strong {
-  font-size: 18px;
-}
-    h2 {
-  font-size: 20px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-weight: 600;
-  letter-spacing: 0.5px;
-}
-    h2 {
-  font-size: 20px;
-  margin-top: 30px;
-  margin-bottom: 10px;
-  font-weight: 600;
-  text-align: center; /* 👈 add this */
-}
-    h2 {
-  border-bottom: 1px solid #eee;
-  padding-bottom: 5px;
+  @keyframes pageFade {
+    to {
+      opacity: 1;
+      transform: translateY(0);
     }
-    .card {
-  transition: transform 0.25s ease, box-shadow 0.25s ease;
-}
+  }
 
-.card:hover {
-  transform: translateY(-6px);
-  box-shadow: 0 12px 25px rgba(0,0,0,0.15);
-}
-    .card:active {
-  transform: scale(0.98);
+  h1 {
+    margin-bottom: 8px;
+    opacity: 0;
+    transform: translateY(-8px);
+    animation: fadeDown 700ms ease-out 120ms forwards;
   }
-    /* page fade-in */
-body {
-  animation: fadeInPage 0.9s ease;
-}
 
-@keyframes fadeInPage {
-  from {
+  @keyframes fadeDown {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+
+  img {
+    width: 180px;
+    border-radius: 50%;
+    margin-top: 10px;
     opacity: 0;
-    transform: translateY(12px);
+    transform: scale(0.96);
+    animation: popIn 700ms cubic-bezier(.2,.8,.2,1) 220ms forwards;
+    transition: transform 200ms ease, box-shadow 200ms ease;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  @keyframes popIn {
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
   }
-}
-    animation: fadeInPage 0.9s ease;
-    @keyframes fadeInPage {
-  from {
+
+  img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 12px 30px rgba(0,0,0,0.18);
+  }
+
+  p, h2, ul {
     opacity: 0;
-    transform: translateY(12px);
+    transform: translateY(10px);
+    animation: riseIn 650ms ease-out 320ms forwards;
   }
-  to {
-    opacity: 1;
-    transform: translateY(0);
+
+  @keyframes riseIn {
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
-}
+
+  ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  li {
+    margin: 6px 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: #0066cc;
+    font-weight: bold;
+    transition: transform 160ms ease, opacity 160ms ease, text-decoration-color 160ms ease;
+    display: inline-block;
+  }
+
+  a:hover {
+    transform: translateY(-2px);
+    opacity: 0.9;
+    text-decoration: underline;
+  }
+
+  .projects {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 20px;
+  }
+
+  .card {
+    border: 1px solid #ddd;
+    border-radius: 10px;
+    padding: 15px;
+    background: #fafafa;
+    text-align: left;
+    transition: transform 0.25s ease, box-shadow 0.25s ease;
+  }
+
+  .card:hover {
+    transform: translateY(-6px);
+    box-shadow: 0 12px 25px rgba(0,0,0,0.15);
+  }
+
+  .card:active {
+    transform: scale(0.98);
+  }
+
+  .card a {
+    display: inline-block;
+    margin-top: 8px;
+    color: #007aff;
+    text-decoration: none;
+    font-weight: bold;
+  }
+
+  .stats {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+
+  .stat {
+    text-align: center;
+  }
+
+  .stat strong {
+    font-size: 18px;
+  }
+
+  h2 {
+    font-size: 20px;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    font-weight: 600;
+    text-align: center;
+    letter-spacing: 0.5px;
+    border-bottom: 1px solid #eee;
+    padding-bottom: 5px;
+  }
+</style>
 </style>
 </head>
 
@@ -224,7 +315,8 @@ body {
   <img src="bisan-subba.jpg" alt="Bisan Subba">
 
   <p>
-    Bisan Subba is a 3D Generalist and Independent Multi-platform Solo  Game Developer specializing in creating interactive digital experiences, 3D modeling, Archviz and Environment Design and World Creation using Unreal Engine (C++/Blueprints), Blender, Plasticity, Marmoset Toolbag, Substance Painter and Photoshop. 
+  Bisan Subba is a 3D Generalist and Independent Multi-platform Solo Game Developer specializing in creating interactive digital experiences, 3D modeling, Archviz and Environment Design and World Creation using Unreal Engine (C++/Blueprints), Blender, Plasticity, Marmoset Toolbag, Substance Painter and Photoshop.
+</p>
 
 <p>
   He is the developer of 
