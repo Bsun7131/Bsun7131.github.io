@@ -120,6 +120,45 @@
     opacity: 0.9;
     text-decoration: underline;
   }
+    /* ===== PROJECT CARDS ===== */
+.projects {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  margin-top: 20px;
+}
+
+.card {
+  border: 1px solid #ddd;
+  border-radius: 10px;
+  padding: 15px;
+  background: #fafafa;
+  text-align: left;
+}
+
+.card a {
+  display: inline-block;
+  margin-top: 8px;
+  color: #007aff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* ===== STATS SECTION ===== */
+.stats {
+  margin-top: 30px;
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+}
+
+.stat {
+  text-align: center;
+}
+
+.stat strong {
+  font-size: 18px;
+}
 </style>
 </head>
 
@@ -134,14 +173,64 @@
 
 <p>
   He is the developer of 
-  <strong><a href="https://apps.apple.com/us/app/sky-gap-escape/id6758530573" target="_blank">Sky Gap Escape</a></strong> published on <strong>App Store</strong>, 
-  <strong><a href="https://play.google.com/store/apps/details?id=com.Bsun.ObstacleGameSkyNew" target="_blank">Bsun Obstacle</a></strong> published on <strong>Google Play</strong>, and 
-  <strong><a href="https://bisan-subba.itch.io/" target="_blank">Bsun Obstacle Game</a></strong> available on <strong>itch.io</strong>, 
-  and showcases his original 3D artwork on 
-  <strong><a href="https://www.pexels.com/@bisan-subba-95406729/" target="_blank">Pexels</a></strong>, reaching over 1.1M views and thousands of downloads.
+  <strong><a href="https://apps.apple.com/us/app/sky-gap-escape/id6758530573" target="_blank">Sky Gap Escape</a></strong> (App Store), 
+  <strong><a href="https://play.google.com/store/apps/details?id=com.Bsun.ObstacleGameSkyNew" target="_blank">Bsun Obstacle</a></strong> (Google Play), and 
+  <strong><a href="https://bisan-subba.itch.io/" target="_blank">Bsun Obstacle Game</a></strong> (itch.io), 
+  and showcases his artwork on 
+  <strong><a href="https://www.pexels.com/@bisan-subba-95406729/" target="_blank">Pexels</a></strong>, 
+  reaching over <strong>1.1M+ views</strong> and thousands of downloads.
 </p>
 
-  <h2>Technical Expertise</h2>
+<h2>Featured Projects</h2>
+
+<div class="projects">
+
+  <div class="card">
+    <strong>Sky Gap Escape</strong>
+    <p>A fast-paced mobile game.</p>
+    <a href="https://apps.apple.com/us/app/sky-gap-escape/id6758530573" target="_blank">
+      Play on App Store
+    </a>
+  </div>
+
+  <div class="card">
+    <strong>Bsun Obstacle</strong>
+    <p>Available on Google Play.</p>
+    <a href="https://play.google.com/store/apps/details?id=com.Bsun.ObstacleGameSkyNew" target="_blank">
+      View on Google Play
+    </a>
+  </div>
+
+  <div class="card">
+    <strong>Bsun Obstacle Game</strong>
+    <p>Explore more games on itch.io.</p>
+    <a href="https://bisan-subba.itch.io/" target="_blank">
+      Visit itch.io
+    </a>
+  </div>
+
+</div>
+
+<h2>Achievements</h2>
+
+<div class="stats">
+  <div class="stat">
+    <strong>1.1M+</strong>
+    <p>Views on Pexels</p>
+  </div>
+
+  <div class="stat">
+    <strong>1000+</strong>
+    <p>Downloads</p>
+  </div>
+
+  <div class="stat">
+    <strong>3+</strong>
+    <p>Published Projects</p>
+  </div>
+</div>
+
+<h2>Technical Expertise</h2>
   <ul>
     <li><strong>Unreal Engine (C++ & Blueprints)</strong></li>
     <li>Blender, Plasticity, Substance Painter, Marmoset Toolbag, Photoshop</li>
