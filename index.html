@@ -188,6 +188,32 @@
     .card:active {
   transform: scale(0.98);
   }
+    /* page fade-in */
+body {
+  animation: fadeInPage 0.9s ease;
+}
+
+@keyframes fadeInPage {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+    animation: fadeInPage 0.9s ease;
+    @keyframes fadeInPage {
+  from {
+    opacity: 0;
+    transform: translateY(12px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
 </style>
 </head>
 
