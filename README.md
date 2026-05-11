@@ -1,2 +1,2 @@
 # Bsun7131.github.io
-Official website of Bisan Subba, Independent Multi-platform Solo Game Developer and 3D Generalist
+Official website of Bisan Subba, Independent Multi-platform Software Engineer & Solo Game Developer, 3D Generalist Archviz and World Creator
