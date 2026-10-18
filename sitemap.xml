@@ -2,5 +2,25 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://bsun7131.github.io/</loc>
-  </url>
+</url>
+
+<url>
+    <loc>https://bsun7131.github.io/apps.html</loc>
+</url>
+
+<url>
+    <loc>https://bsun7131.github.io/Bsun-Mortgage-Calculator/</loc>
+</url>
+
+<url>
+    <loc>https://bsun7131.github.io/Bsun-Currency-Converter-/</loc>
+</url>
+
+<url>
+    <loc>https://bsun7131.github.io/Bsun-Calculator/</loc>
+</url>
+
+<url>
+    <loc>https://bsun7131.github.io/Table-Tennis-Game/</loc>
+</url>
 </urlset>
